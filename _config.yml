@@ -89,4 +89,6 @@ navigation:
   - title: Home
     url: /index.html
   - title: About
-    url: /test1
+    url: /about
+  - title: Category
+    url: /category
