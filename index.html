@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<div id="home">
+  <h1>Blog Posts</h1>
+  <div class="posts">
+    {% for post in site.posts %}
+      <article class="post">
+
+        <h2><a style="color:#000;" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+
+        <div class="entry">
+          {{ post.excerpt }}
+        </div>
+
+        <a style="color:#3a3b3d;" href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+      </article>
+    {% endfor %}
+  </div>
+</div>
